@@ -17,7 +17,7 @@ console.log(dataArr)
 
 // DELETE
 async function deleteReg (_id) {
-  await useFetch(`${API_HOST}:${API_PORT}/animals/${_id}`, {
+  await useFetch(`${API_HOST}:${API_PORT}${API_ROUTE}/animals/${_id}`, {
     method: 'DELETE'
   }).then((res) => {
     if (res.error.value) {
