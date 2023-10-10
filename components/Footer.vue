@@ -49,7 +49,7 @@ export default {
           :icon="icon"
           variant="plain"
           size="small"
-        ></v-btn>
+        />
       </v-card-actions>
       <v-col class="text-center mt-4" cols="12">
         {{ new Date().getFullYear() }} — <strong>Ani-mania</strong>
