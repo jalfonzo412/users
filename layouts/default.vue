@@ -1,6 +1,5 @@
-<script lang="ts" setup>
+<script setup>
 import Header from '../components/Header.vue'
-import Footer from '../components/Footer.vue'
 </script>
 
 <template>
@@ -8,11 +7,21 @@ import Footer from '../components/Footer.vue'
   <div class="container">
     <slot />
   </div>
-  <Footer />
+  <footer>
+    {{ new Date().getFullYear() }} — <strong>Ani-mania</strong>
+  </footer>
 </template>
 
 <style>
     body {
-        margin: 0 !important;
+      margin: 0 !important;
+    }
+    footer {
+      margin-top: 35px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .container {
+      margin-top: 69px;
     }
 </style>
