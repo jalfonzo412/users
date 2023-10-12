@@ -21,7 +21,7 @@ const items = [
 
         <v-toolbar-title
           style="font-family: Quicksand;
-      font-weight: 700;"
+          font-weight: 700;"
         >
           Ani-mania
         </v-toolbar-title>
@@ -34,7 +34,7 @@ const items = [
             variant="text"
             @click.stop="closeOpenDrawer"
           >
-            <v-icon icon="mdi-account-circle" />
+            <v-icon icon="mdi-account-circle-outline" />
           </v-btn>
         </div>
       </v-toolbar>
@@ -47,8 +47,8 @@ const items = [
         <template v-slot:prepend>
           <v-list-item
             lines="two"
-            prepend-avatar="https://randomuser.me/api/portraits/women/81.jpg"
-            title="Jane Smith"
+            prepend-icon="mdi-account-circle"
+            title="User"
             subtitle="Logged in"
           />
         </template>
@@ -81,7 +81,7 @@ const items = [
 
 <style scoped>
 .header{
-  background-color: rgb(254, 74, 8);
+  background-color: #FF5722;
   color: white;
   position: fixed !important;
 }
